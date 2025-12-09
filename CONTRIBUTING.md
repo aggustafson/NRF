@@ -66,6 +66,17 @@ Navigate to the relevant example (e.g., kit-nextjs-article-starter) and start th
 
 This repository includes comprehensive AI coding agent guidance files to help maintain consistent code quality and follow Sitecore XM Cloud best practices across multiple AI assistants.
 
+### Claude Code Guide
+
+The repository includes **`CLAUDE.md`** - a comprehensive guide for Claude Code and AI assistants:
+- Project architecture and technology stack
+- Coding standards with TypeScript and modular layout
+- Security and performance guidelines
+- Component development patterns with examples
+- Safe destructuring and data validation patterns
+- Sitecore Content SDK import guidelines
+- Example prompts and common patterns reference
+
 ### Cursor AI Rules
 
 The repository contains `.cursor/rules/` directory with AI guidance files:
@@ -118,6 +129,12 @@ The repository includes dedicated GitHub Copilot guidance files:
 
 When using AI coding assistants:
 
+**Claude Code:**
+- Reference `CLAUDE.md` for comprehensive project architecture and coding standards
+- Follow the Locality of Behavior pattern for component development
+- Use safe destructuring patterns and proper data validation
+- Refer to example prompts and common patterns for guidance
+
 **Cursor AI:**
 - Rules automatically provide context based on the files you're working with
 - Follow the naming conventions and architectural guidance provided
@@ -139,11 +156,17 @@ When using AI coding assistants:
 - Focus on TypeScript-first development with strict mode
 - Always validate Sitecore datasource existence
 - Implement proper error handling and accessibility features
-- When updating standards, propagate changes to all AI guidance files (Cursor, Windsurf, Copilot)
+- When updating standards, propagate changes to all AI guidance files (Claude, Cursor, Windsurf, Copilot)
 
 ### Contributing to AI Guidance
 
 To improve the AI guidance files:
+
+**For Claude Code Guide:**
+1. Edit `CLAUDE.md` for comprehensive project guidance
+2. Include complete examples with TypeScript interfaces and implementations
+3. Add example prompts that demonstrate Claude Code usage
+4. Ensure all code examples follow the project's coding standards
 
 **For Cursor Rules:**
 1. Edit the relevant `.mdc` files in `.cursor/rules/`

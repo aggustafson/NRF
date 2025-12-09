@@ -88,7 +88,7 @@ Below is an outline of the planned workflow and processes that will be followed:
 - PRs are merged by reviewers to the `dmz` branch after review and validation. Conflicts should be resolved by rebasing onto main. 
 - Once a PR has been merged into `dmz` branch the code changes are validated through an automated full build of the `dmz` branch `HEAD` in the Continous Integration server.  
 - The `dmz` branch acts as a staging/integration branch and once sevearl chnages are integrated and tested in the `dmz` branch they can be manually merged to the `main` branch using merge commits (usually at the end of 1 or 2 weeks)
-- If the build fails, the changes are or issues are found in the `dmz` branch during integration, the problamatic commits can be reverted 
+- If the build fails, the changes are or issues are found in the `dmz` branch during integration, the problamatic commits can be reverted
 
 - Each starter can be developed independently in its own directory
 - Copy `.env.remote.example` to `.env.local` for local development
