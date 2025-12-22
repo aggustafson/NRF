@@ -1,0 +1,38 @@
+﻿---
+ID: "7f1cc278-1eda-4879-9259-41e058c7b825"
+Parent: "54d9acba-c35c-409a-bdaa-00b0822f3159"
+Template: "1105b8f8-1e00-426b-bf1f-c840742d827b"
+Path: /sitecore/content/retail/brightco/Presentation/Page Designs/ProductPage
+SharedFields:
+- ID: "0966b999-0d0e-4278-acc9-9da69d461fe6"
+  Hint: PartialDesigns
+  Value: "{3BC17793-F40F-4652-A35B-4F8891E4D11B}|{58619459-08CE-47E6-8354-69014414B115}|{83965F56-F8A2-4E30-8A5F-BE08DC8F2E2E}"
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "a51e5204-d56d-4d86-b61a-8a22152cb092"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251222T180837Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\angela.gustafson@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\angela.gustafson@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3c26cf85-c22c-469b-98ea-e4c8280aba1e"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\angela.gustafson@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251222T180837Z

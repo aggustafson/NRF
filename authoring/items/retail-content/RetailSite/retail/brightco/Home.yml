@@ -1,0 +1,118 @@
+﻿---
+ID: "53cf9ba1-ceec-4873-bfb8-b2a457df8fa6"
+Parent: "34138879-904a-4c40-8e0e-6ddd79b1cd1f"
+Template: "63fb906f-231e-4c76-815e-291775a8599b"
+Path: /sitecore/content/retail/brightco/Home
+BranchID: "45cf9f42-b3ac-4412-aab9-f8441c7e448e"
+SharedFields:
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{D9BAC79F-28DA-4F67-A178-13928D3808DA}" />
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{F558BEC9-C602-4D7A-B9A1-D0411C946EA4}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{FDDA2EEE-2AFA-4073-9044-528B54F5759C}"
+              p:before="*"
+              s:ds="local:/Data/HeroST/HeroST 1"
+              s:id="{7943A20A-669D-4921-81EE-F4EC7F2E78A3}"
+              s:par="?DynamicPlaceholderId=1&amp;FieldNames=%7b2E50B984-697D-44DE-A052-FB408E0FF5B5%7d"
+              s:ph="headless-main" />
+            <r
+              uid="{FFFAABAE-55F6-46DA-B83B-4283F5A6158F}"
+              p:after="r[@uid='{FDDA2EEE-2AFA-4073-9044-528B54F5759C}']"
+              s:ds="local:/Data/HeroST/HeroST 2"
+              s:id="{7943A20A-669D-4921-81EE-F4EC7F2E78A3}"
+              s:par="?DynamicPlaceholderId=3&amp;FieldNames=%7b5C17EF67-22B0-407C-BA64-DAFD7F37D66E%7d"
+              s:ph="headless-main" />
+            <r
+              uid="{BAB779A2-5E66-433B-8839-F96ED221DF67}"
+              p:after="r[@uid='{FFFAABAE-55F6-46DA-B83B-4283F5A6158F}']"
+              s:ds="local:/Data/HeroST/HeroST 3"
+              s:id="{7943A20A-669D-4921-81EE-F4EC7F2E78A3}"
+              s:par="?DynamicPlaceholderId=4&amp;FieldNames=%7b2E50B984-697D-44DE-A052-FB408E0FF5B5%7d"
+              s:ph="headless-main" />
+            <r
+              uid="{EF003D0C-517A-4242-9914-4271775720A7}"
+              p:after="r[@uid='{BAB779A2-5E66-433B-8839-F96ED221DF67}']"
+              s:ds="local:/Data/TextSlider 1"
+              s:id="{234881E2-350F-4C17-A310-85138E9310A3}"
+              s:par="?DynamicPlaceholderId=2"
+              s:ph="headless-main" />
+            <r
+              uid="{C9ADD05D-C4D9-495A-BA55-A6E6B75D6DCF}"
+              p:after="r[@uid='{EF003D0C-517A-4242-9914-4271775720A7}']"
+              s:ds="local:/Data/MultiPromo 2"
+              s:id="{D806DDF7-39A7-4A6D-8E0A-D138BC53845D}"
+              s:par="?DynamicPlaceholderId=6&amp;FieldNames=%7bCD9EAA6E-6EEE-4178-9157-F8CF7F655BD8%7d&amp;Styles=%257C%7b6F479CE3-D8AC-487D-91A1-2A52FFAA0C98%7d%257C"
+              s:ph="headless-main" />
+            <r
+              uid="{36DF24D0-E742-4EA9-97F6-A030A0AD6FB1}"
+              p:after="*[1=2]"
+              s:ds="local:/Data/SignupBanner 1"
+              s:id="{EF8925C3-D106-4187-9BC4-3C19A213AE75}"
+              s:par="?DynamicPlaceholderId=5&amp;FieldNames=%7bDACB9C0A-12E3-4964-BFF4-2577FFAD69F5%7d"
+              s:ph="headless-main" />
+          </d>
+        </r>
+    - ID: "2485de13-6c39-468c-9c26-fe08c27088f4"
+      Hint: pageSummary
+      Value: SYNC
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251222T180552Z
+    - ID: "27cd428b-f652-4534-b76f-33f64b742659"
+      Hint: pageShortTitle
+      Value: SYNC
+    - ID: "4dd4e18f-b1a3-4225-967f-b4ec9f68928c"
+      Hint: ogDescription
+      Value: SYNC
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\angela.gustafson@sitecore.com
+    - ID: "5c01b675-9b56-4d6b-aee4-0ecb1a0021f6"
+      Hint: pageTitle
+      Value: SYNC
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\angela.gustafson@sitecore.com
+    - ID: "8535365d-ae76-4875-ab5b-a618d5819af0"
+      Hint: metadataTitle
+      Value: SYNC
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d3750c5c-ed51-4575-a535-68a36087f386"
+    - ID: "9b600e71-cf7a-4874-9032-f394a9bd2e48"
+      Hint: metadataDescription
+      Value: SYNC
+    - ID: "b7979eed-6bcb-4117-80bc-4bcc6aab12a9"
+      Hint: pageHeaderTitle
+      Value: SYNC
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\angela.gustafson@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251222T180847Z
+    - ID: "ed981ca0-271d-4543-b735-ecc955bd58a1"
+      Hint: ogTitle
+      Value: SYNC
+    - ID: "f6fcc0b6-31b2-49cd-8a66-4ba282a8ad24"
+      Hint: metadataKeywords
+      Value: Symphonic, audio, speakers, headphones

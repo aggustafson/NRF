@@ -1,0 +1,91 @@
+@theme {
+  /* --- BRAND COLORS (BrightCo) --- */
+  --color-background: #ffffff;
+  --color-foreground: #1a1a1a;
+
+  --color-primary: #ff8a00; /* BrightCo orange */
+  --color-primary-hover: #e67a00;
+  --color-primary-foreground: #ffffff;
+
+  --color-secondary: #0b3a75; /* Deep BrightCo blue */
+  --color-secondary-hover: #0a3366;
+  --color-secondary-foreground: #ffffff;
+
+  --color-accent: #0b3a75;
+  --color-accent-foreground: #ffffff;
+
+  --color-muted: #f2f2f2;
+  --color-muted-foreground: #7a7a7a;
+
+  --color-border: #e5e5e5;
+  --color-input: #e5e5e5;
+  --color-ring: #0b3a75;
+
+  --color-card: #ffffff;
+  --color-card-foreground: #1a1a1a;
+
+  --color-popover: #ffffff;
+  --color-popover-foreground: #1a1a1a;
+
+  --color-destructive: #dc2626;
+  --color-destructive-hover: #b91c1c;
+  --color-destructive-foreground: #ffffff;
+
+  --color-tertiary: #f6f6f6;
+  --color-tertiary-hover: #ededed;
+  --color-tertiary-foreground: #333333;
+
+
+  /* --- BACKGROUND IMAGERY --- */
+  --background-image-gradient: linear-gradient(180deg, #ffffff 0%, #ffffff 100%);
+  --background-image-gradient-secondary: linear-gradient(90deg, #ffffff 0%, #f6f6f6 100%);
+  --background-image-sound-waves: none;
+
+
+  /* --- TYPOGRAPHY --- */
+  /* Note: These variables are set by Next.js font loading in Layout.tsx */
+  /* The @theme block doesn't directly set --font-heading/body/accent, */
+  /* but we keep font-family variables for Tailwind utility class generation */
+  --font-family-heading: 'heading', sans-serif;
+  --font-family-body: 'IBM Plex Sans', sans-serif;
+  --font-family-accent: 'IBM Plex Mono', monospace;
+
+  /* Soft, modern letter spacing */
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.015rem;
+
+
+  /* --- BORDER RADII (modern curves) --- */
+  --border-radius-default: 0.5rem;
+  --border-radius-md: 0.75rem;
+  --border-radius-lg: 1rem;
+  --border-radius-xl: 1.25rem;
+  --border-radius-2xl: 1.75rem;
+  --border-radius-3xl: 2.25rem;
+
+
+  /* --- SHADOWS / BLUR (soft UI look) --- */
+  --blur-sm: 0.15rem;
+  --blur-default: 0.35rem;
+  --blur-lg: 0.75rem;
+  --blur-2xl: 1.5rem;
+
+
+  /* --- SPACING stays same but gives clean layout --- */
+  /* (all existing spacing variables remain unchanged) */
+
+
+  /* --- COMPONENT CUSTOMIZATIONS FOR BUTTONS --- */
+  /* Bright orange + deep blue buttons, same as attached UI */
+  --color-light: #ffffff;
+  --color-light-hover: #f7f7f7;
+  --color-light-foreground: #0b3a75;
+
+  --color-dark: #0b3a75;
+  --color-dark-hover: #092e5d;
+  --color-dark-foreground: #ffffff;
+
+
+  /* Safari-style translucent overlay for hero section */
+  --color-overlay: rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,31 @@
+﻿---
+ID: "b1698c45-6e7e-4b5b-9e1f-6c14759a7a45"
+Parent: "c039e330-3c1d-4c47-84b6-57c65692209b"
+Template: "0a5d0500-2c18-48bd-a508-f6c071dfe35e"
+Path: /sitecore/content/retail/brightco/Data/MultiPromo Tabs
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251222T180748Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\angela.gustafson@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\angela.gustafson@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b9e4194a-736c-4152-afc9-f2e7d364386b"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\angela.gustafson@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251222T180748Z

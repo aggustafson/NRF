@@ -1,0 +1,64 @@
+﻿---
+ID: "80a26235-ddf1-45ec-b8ec-beaac264df24"
+Parent: "cef2872b-603d-48b1-97d0-d58ccad37a31"
+Template: "92979eba-bd00-422e-b295-3d8dadca860d"
+Path: /sitecore/content/retail/brightco/Presentation/Partial Designs/Global/Footer/Data/Footer
+BranchID: "3e0f1e87-6c71-4b15-877c-7a2d1680fe32"
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{A053ED9F-4099-4682-9411-2B4C98E481E4}"
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "73b1ab5e-c51a-44a2-b344-fe5500e11b0d"
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{CF67B851-D5C2-44F9-AE65-55CA0A1A1B4C}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251222T180724Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{12FFAC4C-565F-4C9A-B63E-7F77E96B4D1F}"
+    - ID: "4ca9bbc2-95df-411f-8347-cfc9803b9ae8"
+      Hint: InstagramLink
+      Value: |
+        <link linktype="external" url="#" target="" text="Instagram" title="" class=""/>
+    - ID: "50b8a490-082d-4b70-a654-59ffedabe9bd"
+      Hint: CopyrightText
+      Value: |
+        <div class="ck-content"><p>© 2025 SYNC. All rights reserved.</p></div>
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\neli.kostadinova@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\angela.gustafson@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ac681451-92b0-4b25-b186-41a12acc3422"
+    - ID: "a034ad1f-79eb-4b6a-9860-e5465a3e2733"
+      Hint: LinkedinLink
+      Value: |
+        <link linktype="external" url="#" target="" text="Linkedin" title="" class=""/>
+    - ID: "a826b100-dcc9-4a5d-adc2-59aa5367238b"
+      Hint: FacebookLink
+      Value: |
+        <link linktype="external" url="#" target="" text="Facebook" title="" class=""/>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\angela.gustafson@sitecore.com
+    - ID: "bc9a0214-7aee-450d-a030-463883e72394"
+      Hint: Title
+      Value: Let's sync.
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251222T180724Z

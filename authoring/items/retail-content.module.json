@@ -1,0 +1,20 @@
+{
+    "$schema": "../../.sitecore/schemas/ModuleFile.schema.json",
+    "namespace": "retail-content",
+    "items": {
+        "path": "retail-content",
+        "includes": [
+            {
+                "name": "RetailSite",
+                "path": "/sitecore/content/retail",
+                "allowedPushOperations": "CreateUpdateAndDelete",
+                "excludes": [
+                    {
+                        "path": "/sitecore/content/retail/brightco/Presentation/Styles"
+                    }
+                ]
+            }
+        ]
+    }
+}
+
