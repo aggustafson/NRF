@@ -42,6 +42,16 @@ export const Default = (props: ProductComparisonProps) => {
   const t = useTranslations();
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  // Safe translation helper
+  const getTranslation = (key: string, fallback: string): string => {
+    try {
+      const translation = t(key);
+      return translation || fallback;
+    } catch {
+      return fallback;
+    }
+  };
+
   const products = props.fields?.Products || [];
 
   return (
@@ -77,7 +87,7 @@ export const Default = (props: ProductComparisonProps) => {
                   href={products[currentIndex]?.url || '#'}
                   className="btn btn-primary mt-3 justify-self-center"
                 >
-                  {t(DICTIONARY_KEYS.BUTTON_LABEL) || 'Buy Now'}
+                  {getTranslation(DICTIONARY_KEYS.BUTTON_LABEL, 'Buy Now')}
                 </Link>
               )}
               <hr className="border-border my-10"></hr>

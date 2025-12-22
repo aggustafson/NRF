@@ -81,7 +81,11 @@ export const Default = (props: MultiPromoProps) => {
 
   if (props.fields) {
     return (
-      <section className={`relative ${props.params?.styles || ''}`} data-class-change>
+      <section
+        className={`relative ${props.params?.styles || ''}`}
+        data-class-change
+        suppressHydrationWarning
+      >
         <div className="container mx-auto px-4 py-16">
           <div className="max-w-2xl mx-auto text-center">
             {datasource?.title && (
@@ -118,6 +122,7 @@ export const Stacked = (props: MultiPromoProps) => {
       <section
         className={`relative ${props.params?.styles || ''} overflow-hidden`}
         data-class-change
+        suppressHydrationWarning
       >
         <span className="absolute top-1/3 left-1/3 [.multipromo-3-2_&]:-left-1/3 w-screen h-64 bg-primary opacity-50 blur-[400px] -rotate-15 [.multipromo-3-2_&]:rotate-15 z-0"></span>
         <div className="relative container mx-auto px-4 py-16 z-10">
@@ -162,7 +167,11 @@ export const SingleColumn = (props: MultiPromoProps) => {
 
   if (props.fields) {
     return (
-      <section className={`relative ${props.params?.styles || ''}`} data-class-change>
+      <section
+        className={`relative ${props.params?.styles || ''}`}
+        data-class-change
+        suppressHydrationWarning
+      >
         <div className="container mx-auto px-4 py-16">
           <div className="max-w-2xl mb-16">
             {datasource?.title && (

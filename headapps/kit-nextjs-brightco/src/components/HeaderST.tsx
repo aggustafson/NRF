@@ -1,3 +1,5 @@
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   Link as ContentSdkLink,
   NextImage as ContentSdkImage,
@@ -6,8 +8,11 @@ import {
   AppPlaceholder,
 } from '@sitecore-content-sdk/nextjs';
 import Link from 'next/link';
+import { MiniCart } from './site-three/non-sitecore/MiniCart';
+import { SearchBox } from './site-three/non-sitecore/SearchBox';
 import { ComponentProps } from 'lib/component-props';
 import componentMap from '.sitecore/component-map';
+import { MobileMenuWrapper } from './site-three/MobileMenuWrapper';
 
 interface Fields {
   Logo: ImageField;
@@ -55,33 +60,54 @@ export const Default = (props: HeaderSTProps) => {
                 />
               </li>
               <li className="mr-auto lg:mr-0">
-                <ContentSdkLink
-                  field={props.fields?.SearchLink}
-                  prefetch={false}
-                  className="block p-4 font-(family-name:--font-accent) font-medium"
-                />
+                {props.params.showSearchBox ? (
+                  <SearchBox searchLink={props.fields?.SearchLink} />
+                ) : (
+                  <ContentSdkLink
+                    field={props.fields?.SearchLink}
+                    prefetch={false}
+                    className="block p-4 font-(family-name:--font-accent) font-medium"
+                  />
+                )}
               </li>
+              <MobileMenuWrapper>
+                <div className="lg:hidden flex flex-col w-full h-full">
+                  <div className="flex-1 flex items-center justify-center">
+                    <ul className="flex flex-col text-center bg-background">
+                      <AppPlaceholder
+                        name={`header-navigation-${props.params?.DynamicPlaceholderId}`}
+                        rendering={props.rendering}
+                        page={props.page}
+                        componentMap={componentMap}
+                      />
+                    </ul>
+                  </div>
+                  <div className="w-full">
+                    <hr className="w-full border-border" />
+                    <ul className="text-center">
+                      <li>
+                        <ContentSdkLink
+                          field={props.fields?.SupportLink}
+                          prefetch={false}
+                          className="block p-4 font-(family-name:--font-accent) font-medium"
+                        />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </MobileMenuWrapper>
               <li>
-                <ContentSdkLink
-                  field={props.fields?.CartLink}
-                  prefetch={false}
-                  className="block p-4"
-                >
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
+                {props.params.showMiniCart ? (
+                  <MiniCart cartLink={props.fields?.CartLink} />
+                ) : (
+                  <ContentSdkLink
+                    field={props.fields?.CartLink}
+                    prefetch={false}
+                    className="block p-4"
                   >
-                    <circle cx="8" cy="21" r="1" />
-                    <circle cx="19" cy="21" r="1" />
-                    <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
-                  </svg>
-                </ContentSdkLink>
+                    <FontAwesomeIcon icon={faShoppingCart} width={24} height={24} />
+                  </ContentSdkLink>
+                )}
               </li>
             </ul>
           </div>

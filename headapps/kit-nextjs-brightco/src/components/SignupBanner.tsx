@@ -33,6 +33,16 @@ export const Default = (props: SignupBannerProps) => {
   const { fields } = props;
   const t = useTranslations();
 
+  // Safe translation helper
+  const getTranslation = (key: string, fallback: string): string => {
+    try {
+      const translation = t(key);
+      return translation || fallback;
+    } catch {
+      return fallback;
+    }
+  };
+
   if (!fields) {
     return null;
   }
@@ -64,13 +74,13 @@ export const Default = (props: SignupBannerProps) => {
               <div className="flex-1">
                 <Input
                   type="email"
-                  placeholder={t(DICTIONARY_KEYS.SIGNUPBANNER_InputPlaceholder)}
+                  placeholder={getTranslation(DICTIONARY_KEYS.SIGNUPBANNER_InputPlaceholder, 'Enter your email')}
                   className="px-4 text-sm text-gray-900 bg-muted placeholder-muted-foreground transition-all duration-200 rounded-full focus:outline-none focus:ring-0 focus:border-transparent border-0 outline-none focus:shadow-none shadow-none focus-visible:ring-0 focus-visible:outline-none"
                 />
               </div>
 
               <Button className="btn btn-primary">
-                {t(DICTIONARY_KEYS.SIGNUPBANNER_ButtonLabel)}
+                {getTranslation(DICTIONARY_KEYS.SIGNUPBANNER_ButtonLabel, 'Submit')}
               </Button>
             </div>
           </div>
@@ -83,6 +93,16 @@ export const Default = (props: SignupBannerProps) => {
 export const ContentLeft = (props: SignupBannerProps) => {
   const { fields } = props;
   const t = useTranslations();
+
+  // Safe translation helper
+  const getTranslation = (key: string, fallback: string): string => {
+    try {
+      const translation = t(key);
+      return translation || fallback;
+    } catch {
+      return fallback;
+    }
+  };
 
   if (!fields) {
     return null;
@@ -115,13 +135,13 @@ export const ContentLeft = (props: SignupBannerProps) => {
                 <div className="flex-1">
                   <Input
                     type="email"
-                    placeholder={t(DICTIONARY_KEYS.SIGNUPBANNER_InputPlaceholder)}
+                    placeholder={getTranslation(DICTIONARY_KEYS.SIGNUPBANNER_InputPlaceholder, 'Enter your email')}
                     className="px-4 text-sm text-gray-900 bg-muted placeholder-muted-foreground transition-all duration-200 rounded-full focus:outline-none focus:ring-0 focus:border-transparent border-0 outline-none focus:shadow-none shadow-none focus-visible:ring-0 focus-visible:outline-none"
                   />
                 </div>
 
                 <Button className="btn btn-primary">
-                  {t(DICTIONARY_KEYS.SIGNUPBANNER_ButtonLabel)}
+                  {getTranslation(DICTIONARY_KEYS.SIGNUPBANNER_ButtonLabel, 'Submit')}
                 </Button>
               </div>
             </div>
@@ -135,6 +155,16 @@ export const ContentLeft = (props: SignupBannerProps) => {
 export const BackgroundPrimary = (props: SignupBannerProps) => {
   const { fields } = props;
   const t = useTranslations();
+
+  // Safe translation helper
+  const getTranslation = (key: string, fallback: string): string => {
+    try {
+      const translation = t(key);
+      return translation || fallback;
+    } catch {
+      return fallback;
+    }
+  };
 
   if (!fields) {
     return null;
@@ -166,13 +196,13 @@ export const BackgroundPrimary = (props: SignupBannerProps) => {
             <div className="flex-1">
               <Input
                 type="email"
-                placeholder={t(DICTIONARY_KEYS.SIGNUPBANNER_InputPlaceholder)}
+                placeholder={getTranslation(DICTIONARY_KEYS.SIGNUPBANNER_InputPlaceholder, 'Enter your email')}
                 className="px-4 text-sm text-gray-900 bg-muted placeholder-muted-foreground transition-all duration-200 rounded-full focus:outline-none focus:ring-0 focus:border-transparent border-0 outline-none focus:shadow-none shadow-none focus-visible:ring-0 focus-visible:outline-none"
               />
             </div>
 
             <Button className="btn btn-primary outline">
-              {t(DICTIONARY_KEYS.SIGNUPBANNER_ButtonLabel)}
+              {getTranslation(DICTIONARY_KEYS.SIGNUPBANNER_ButtonLabel, 'Submit')}
             </Button>
           </div>
         </div>
@@ -184,6 +214,16 @@ export const BackgroundPrimary = (props: SignupBannerProps) => {
 export const BackgroundDark = (props: SignupBannerProps) => {
   const { fields } = props;
   const t = useTranslations();
+
+  // Safe translation helper
+  const getTranslation = (key: string, fallback: string): string => {
+    try {
+      const translation = t(key);
+      return translation || fallback;
+    } catch {
+      return fallback;
+    }
+  };
 
   if (!fields) {
     return null;
@@ -218,13 +258,13 @@ export const BackgroundDark = (props: SignupBannerProps) => {
             <div className="flex-1">
               <Input
                 type="email"
-                placeholder={t(DICTIONARY_KEYS.SIGNUPBANNER_InputPlaceholder)}
+                placeholder={getTranslation(DICTIONARY_KEYS.SIGNUPBANNER_InputPlaceholder, 'Enter your email')}
                 className="px-4 text-sm text-gray-900 bg-muted placeholder-muted-foreground transition-all duration-200 rounded-full focus:outline-none focus:ring-0 focus:border-transparent border-0 outline-none focus:shadow-none shadow-none focus-visible:ring-0 focus-visible:outline-none"
               />
             </div>
 
             <Button className="btn btn-outline">
-              {t(DICTIONARY_KEYS.SIGNUPBANNER_ButtonLabel)}
+              {getTranslation(DICTIONARY_KEYS.SIGNUPBANNER_ButtonLabel, 'Submit')}
             </Button>
           </div>
         </div>

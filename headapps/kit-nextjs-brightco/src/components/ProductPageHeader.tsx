@@ -33,6 +33,16 @@ export const Default = (props: ProductPageHeaderProps) => {
   const t = useTranslations();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
+  // Safe translation helper
+  const getTranslation = (key: string, fallback: string): string => {
+    try {
+      const translation = t(key);
+      return translation || fallback;
+    } catch {
+      return fallback;
+    }
+  };
+
   const images = props.fields?.Images ?? [];
   const productImages = images.length === 2 ? [...images, ...images] : images;
 
@@ -98,7 +108,7 @@ export const Default = (props: ProductPageHeaderProps) => {
         )}
 
         <button className="btn btn-primary btn-sharp cursor-pointer">
-          {t(DICTIONARY_KEYS.BUTTON_LABEL) || 'Add to cart'}
+          {getTranslation(DICTIONARY_KEYS.BUTTON_LABEL, 'Add to cart')}
         </button>
         <div className="flex flex-col items-start gap-4 border-t border-border pt-6 text-sm">
           {props.fields?.WarrantyLink && (

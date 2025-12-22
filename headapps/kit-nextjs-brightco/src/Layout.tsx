@@ -36,10 +36,11 @@ const Layout = ({ page }: LayoutProps): JSX.Element => {
           )
         ) : (
           <>
-            <header>
+            <header key="header">
               <div id="header">
                 {route && (
                   <AppPlaceholder
+                    key="headless-header-placeholder"
                     page={page}
                     componentMap={componentMap}
                     name="headless-header"
@@ -48,10 +49,11 @@ const Layout = ({ page }: LayoutProps): JSX.Element => {
                 )}
               </div>
             </header>
-            <main>
+            <main key="main">
               <div id="content">
                 {route && (
                   <AppPlaceholder
+                    key="headless-main-placeholder"
                     page={page}
                     componentMap={componentMap}
                     name="headless-main"
@@ -60,10 +62,11 @@ const Layout = ({ page }: LayoutProps): JSX.Element => {
                 )}
               </div>
             </main>
-            <footer>
+            <footer key="footer">
               <div id="footer">
                 {route && (
                   <AppPlaceholder
+                    key="headless-footer-placeholder"
                     page={page}
                     componentMap={componentMap}
                     name="headless-footer"

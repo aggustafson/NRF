@@ -31,6 +31,7 @@ export const Default = (props: PageHeaderSTProps) => {
     <section
       className={`relative flex items-center border-8 lg:border-16 border-background ${props?.params?.styles || ''}`}
       data-class-change
+      suppressHydrationWarning
     >
       <div className="absolute inset-0 z-10">
         <ContentSdkImage
@@ -95,6 +96,7 @@ export const Right = (props: PageHeaderSTProps) => {
     <section
       className={`relative flex items-center border-8 lg:border-16 border-background ${props?.params?.styles || ''}`}
       data-class-change
+      suppressHydrationWarning
     >
       <div className="absolute inset-0 z-10">
         <ContentSdkImage
@@ -161,6 +163,7 @@ export const Centered = (props: PageHeaderSTProps) => {
     <section
       className={`relative flex items-center border-8 lg:border-16 border-background ${props?.params?.styles || ''}`}
       data-class-change
+      suppressHydrationWarning
     >
       <div className="absolute inset-0 z-10">
         <ContentSdkImage
@@ -222,6 +225,7 @@ export const SplitScreen = (props: PageHeaderSTProps) => {
     <section
       className={`relative bg-primary border-8 lg:border-16 border-background ${props?.params?.styles || ''}`}
       data-class-change
+      suppressHydrationWarning
     >
       <div className="flex flex-col lg:flex-row lg:min-h-[50rem]">
         <div className="p-8 lg:basis-full lg:self-center lg:p-14">
@@ -280,6 +284,7 @@ export const Stacked = (props: PageHeaderSTProps) => {
     <section
       className={`relative flex flex-col bg-primary lg:flex-row lg:items-center lg:min-h-[50rem] lg:bg-transparent ${props?.params?.styles || ''}`}
       data-class-change
+      suppressHydrationWarning
     >
       <div className="container px-4 mx-auto">
         <div className="relative lg:w-1/2 px-6 py-12 bg-primary z-20">

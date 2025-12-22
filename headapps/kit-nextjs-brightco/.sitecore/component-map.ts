@@ -19,7 +19,13 @@ import * as FeatureBanner from 'src/components/FeatureBanner';
 import * as AccordionBlock from 'src/components/AccordionBlock';
 import * as input from 'src/components/ui/input';
 import * as button from 'src/components/ui/button';
+import * as LinkList from 'src/components/sxa/LinkList';
 import * as Container from 'src/components/sxa/Container';
+import * as MobileMenuWrapper from 'src/components/site-three/MobileMenuWrapper';
+import * as MegaMenuItemWrapper from 'src/components/site-three/MegaMenuItemWrapper';
+import * as MegaMenuItem from 'src/components/site-three/MegaMenuItem';
+import * as SearchBox from 'src/components/site-three/non-sitecore/SearchBox';
+import * as MiniCart from 'src/components/site-three/non-sitecore/MiniCart';
 import * as PartialDesignDynamicPlaceholder from 'src/components/partial-design-dynamic-placeholder/PartialDesignDynamicPlaceholder';
 
 export const componentMap = new Map<string, NextjsContentSdkComponent>([
@@ -41,7 +47,13 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['AccordionBlock', { ...AccordionBlock, componentType: 'client' }],
   ['input', { ...input }],
   ['button', { ...button }],
+  ['LinkList', { ...LinkList, componentType: 'client' }],
   ['Container', { ...Container }],
+  ['MobileMenuWrapper', { ...MobileMenuWrapper, componentType: 'client' }],
+  ['MegaMenuItemWrapper', { ...MegaMenuItemWrapper, componentType: 'client' }],
+  ['MegaMenuItem', { ...MegaMenuItem }],
+  ['SearchBox', { ...SearchBox, componentType: 'client' }],
+  ['MiniCart', { ...MiniCart, componentType: 'client' }],
   ['PartialDesignDynamicPlaceholder', { ...PartialDesignDynamicPlaceholder }],
 ]);
 

@@ -63,6 +63,7 @@ export const Default = (props: TextSliderProps) => {
       ref={containerRef}
       className={`relative w-full h-18 lg:h-34 whitespace-nowrap overflow-hidden ${props.params.styles}`}
       data-class-change
+      suppressHydrationWarning
     >
       {/* hidden div - used to calculate repeats */}
       <h2
@@ -81,15 +82,22 @@ export const Default = (props: TextSliderProps) => {
             )}s`,
           }}
         >
-          <h2 className="text-3xl lg:text-7xl">
+          <h2 className="text-3xl lg:text-7xl" suppressHydrationWarning>
             {Array(repeatCount)
               .fill('')
               .map((_el, i) => (
                 <span
                   key={i}
                   className="font-[inherit] [.bg-gradient-secondary_&:nth-child(4n-3)]:text-white [.bg-gradient-secondary_&:nth-child(4n-2)]:text-white"
+                  suppressHydrationWarning
                 >
-                  {i === 0 ? <ContentSdkText field={props?.fields?.Text} /> : phrase}
+                  {i === 0 ? (
+                    <span suppressHydrationWarning>
+                      <ContentSdkText field={props?.fields?.Text} />
+                    </span>
+                  ) : (
+                    phrase
+                  )}
                   <span className="font-[inherit] text-primary">. </span>
                 </span>
               ))}

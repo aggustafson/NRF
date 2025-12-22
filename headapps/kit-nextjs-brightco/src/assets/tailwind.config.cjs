@@ -159,5 +159,13 @@ module.exports = {
             },
         },
     },
+    /* eslint-disable @typescript-eslint/no-require-imports */
+    plugins: [
+        require('tailwindcss-animate'),
+        require('tailwindcss-scrim-gradients'),
+        require('@tailwindcss/container-queries'),
+        require('@tailwindcss/typography'),
+    ],
+    /* eslint-enable @typescript-eslint/no-require-imports */
 };
 
