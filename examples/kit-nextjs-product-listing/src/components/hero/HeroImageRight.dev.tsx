@@ -2,9 +2,8 @@
 
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
-import { Text } from '@sitecore-content-sdk/nextjs';
+import { Text as ContentSdkText, Link as ContentSdkLink } from '@sitecore-content-sdk/nextjs';
 import { NoDataFallback } from '@/utils/NoDataFallback';
-import { ButtonBase } from '@/components/button-component/ButtonComponent';
 import { Default as ImageWrapper } from '@/components/image/ImageWrapper.dev';
 import { Default as AnimatedSection } from '@/components/animated-section/AnimatedSection.dev';
 import { Default as ZipcodeSearchForm } from '@/components/forms/zipcode/ZipcodeSearchForm.dev';
@@ -55,10 +54,10 @@ export const HeroImageRight: React.FC<HeroProps> = (props) => {
               isPageEditing={isPageEditing}
               reducedMotion={prefersReducedMotion}
             >
-              <Text
+              <ContentSdkText
                 tag="h1"
                 field={title}
-                className="font-heading @md/herowrapper:text-[clamp(3rem,18cqi,6rem)] relative -ml-[2px] max-w-[15ch] text-balance text-[clamp(3rem,11cqi,4rem)] font-light leading-tight"
+                className="text-white text-5xl lg:text-7xl xl:text-8xl uppercase font-bold leading-[1.1] mb-6 lg:mb-8"
               />
             </AnimatedSection>
 
@@ -71,9 +70,9 @@ export const HeroImageRight: React.FC<HeroProps> = (props) => {
               className="mt-6"
             >
               {description && (
-                <Text
+                <ContentSdkText
                   tag="p"
-                  className="@xs/herocontent:text-xl max-w-[32ch] text-pretty leading-tight"
+                  className="text-white text-lg lg:text-xl mb-2 lg:mb-3 font-normal"
                   field={description}
                 />
               )}
@@ -121,9 +120,9 @@ export const HeroImageRight: React.FC<HeroProps> = (props) => {
                       isPageEditing={isPageEditing}
                       reducedMotion={prefersReducedMotion}
                     >
-                      <Text
+                      <ContentSdkText
                         tag="p"
-                        className="font-heading @md/herowrapper:text-lg text-pretty font-light leading-tight"
+                        className="text-white text-lg lg:text-xl font-normal"
                         field={bannerText}
                       />
                     </AnimatedSection>
@@ -136,10 +135,10 @@ export const HeroImageRight: React.FC<HeroProps> = (props) => {
                       reducedMotion={prefersReducedMotion}
                       delay={200}
                     >
-                      <ButtonBase
-                        buttonLink={bannerCTA}
-                        variant="default"
-                        isPageEditing={isPageEditing}
+                      <ContentSdkLink
+                        field={bannerCTA}
+                        prefetch={false}
+                        className="btn btn-primary text-primary-foreground"
                       />
                     </AnimatedSection>
                   )}

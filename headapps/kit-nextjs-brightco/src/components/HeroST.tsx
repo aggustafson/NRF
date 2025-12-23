@@ -106,21 +106,21 @@ export const Right = (props: PageHeaderSTProps) => {
         <div className="flex flex-col justify-center mt-10 lg:mt-0 lg:w-2/3 lg:min-h-[50rem] px-4 py-8 lg:p-8 backdrop-blur-[20px] bg-[linear-gradient(136deg,_rgba(255,255,255,0.21)_2.61%,_rgba(255,255,255,0.42)_73.95%)]">
           <div className="lg:max-w-3xl lg:ml-auto text-right">
             {props?.fields?.Eyebrow && (
-              <h1 className="text-primary text-xl lg:text-3xl pb-4 uppercase">
+              <p className="text-white text-lg lg:text-xl mb-2 lg:mb-3 font-normal">
                 <ContentSdkText field={props?.fields?.Eyebrow} />
-              </h1>
+              </p>
             )}
             {props?.fields?.Title && (
-              <h1 className="text-4xl lg:text-7xl uppercase">
+              <h1 className="text-white text-5xl lg:text-7xl xl:text-8xl uppercase font-bold leading-[1.1] mb-6 lg:mb-8">
                 <ContentSdkText field={props?.fields?.Title} />
               </h1>
             )}
-            <div className="mt-8">
+            <div className="mt-6 lg:mt-8 flex flex-wrap gap-3 lg:gap-4 justify-end">
               {props?.fields?.Link1 && (
                 <ContentSdkLink
                   field={props?.fields?.Link1}
                   prefetch={false}
-                  className="btn btn-secondary mr-4"
+                  className="btn btn-dark"
                 />
               )}
               {props?.fields?.Link2 && (

@@ -37,7 +37,8 @@ export const Default = (props: SignupBannerProps) => {
   const getTranslation = (key: string, fallback: string): string => {
     try {
       const translation = t(key);
-      return translation || fallback;
+      // If translation returns the key itself (translation not found), use fallback
+      return translation && translation !== key ? translation : fallback;
     } catch {
       return fallback;
     }
@@ -74,13 +75,13 @@ export const Default = (props: SignupBannerProps) => {
               <div className="flex-1">
                 <Input
                   type="email"
-                  placeholder={getTranslation(DICTIONARY_KEYS.SIGNUPBANNER_InputPlaceholder, 'Enter your email')}
+                  placeholder={getTranslation(DICTIONARY_KEYS.SIGNUPBANNER_InputPlaceholder, 'Email')}
                   className="px-4 text-sm text-gray-900 bg-muted placeholder-muted-foreground transition-all duration-200 rounded-full focus:outline-none focus:ring-0 focus:border-transparent border-0 outline-none focus:shadow-none shadow-none focus-visible:ring-0 focus-visible:outline-none"
                 />
               </div>
 
               <Button className="btn btn-primary">
-                {getTranslation(DICTIONARY_KEYS.SIGNUPBANNER_ButtonLabel, 'Submit')}
+                {getTranslation(DICTIONARY_KEYS.SIGNUPBANNER_ButtonLabel, 'Sign Up')}
               </Button>
             </div>
           </div>
@@ -98,7 +99,8 @@ export const ContentLeft = (props: SignupBannerProps) => {
   const getTranslation = (key: string, fallback: string): string => {
     try {
       const translation = t(key);
-      return translation || fallback;
+      // If translation returns the key itself (translation not found), use fallback
+      return translation && translation !== key ? translation : fallback;
     } catch {
       return fallback;
     }
@@ -135,13 +137,13 @@ export const ContentLeft = (props: SignupBannerProps) => {
                 <div className="flex-1">
                   <Input
                     type="email"
-                    placeholder={getTranslation(DICTIONARY_KEYS.SIGNUPBANNER_InputPlaceholder, 'Enter your email')}
+                    placeholder={getTranslation(DICTIONARY_KEYS.SIGNUPBANNER_InputPlaceholder, 'Email')}
                     className="px-4 text-sm text-gray-900 bg-muted placeholder-muted-foreground transition-all duration-200 rounded-full focus:outline-none focus:ring-0 focus:border-transparent border-0 outline-none focus:shadow-none shadow-none focus-visible:ring-0 focus-visible:outline-none"
                   />
                 </div>
 
                 <Button className="btn btn-primary">
-                  {getTranslation(DICTIONARY_KEYS.SIGNUPBANNER_ButtonLabel, 'Submit')}
+                  {getTranslation(DICTIONARY_KEYS.SIGNUPBANNER_ButtonLabel, 'Sign Up')}
                 </Button>
               </div>
             </div>
@@ -160,7 +162,8 @@ export const BackgroundPrimary = (props: SignupBannerProps) => {
   const getTranslation = (key: string, fallback: string): string => {
     try {
       const translation = t(key);
-      return translation || fallback;
+      // If translation returns the key itself (translation not found), use fallback
+      return translation && translation !== key ? translation : fallback;
     } catch {
       return fallback;
     }
@@ -196,13 +199,13 @@ export const BackgroundPrimary = (props: SignupBannerProps) => {
             <div className="flex-1">
               <Input
                 type="email"
-                placeholder={getTranslation(DICTIONARY_KEYS.SIGNUPBANNER_InputPlaceholder, 'Enter your email')}
+                placeholder={getTranslation(DICTIONARY_KEYS.SIGNUPBANNER_InputPlaceholder, 'Name')}
                 className="px-4 text-sm text-gray-900 bg-muted placeholder-muted-foreground transition-all duration-200 rounded-full focus:outline-none focus:ring-0 focus:border-transparent border-0 outline-none focus:shadow-none shadow-none focus-visible:ring-0 focus-visible:outline-none"
               />
             </div>
 
             <Button className="btn btn-primary outline">
-              {getTranslation(DICTIONARY_KEYS.SIGNUPBANNER_ButtonLabel, 'Submit')}
+              {getTranslation(DICTIONARY_KEYS.SIGNUPBANNER_ButtonLabel, 'Sign Up')}
             </Button>
           </div>
         </div>
@@ -219,7 +222,8 @@ export const BackgroundDark = (props: SignupBannerProps) => {
   const getTranslation = (key: string, fallback: string): string => {
     try {
       const translation = t(key);
-      return translation || fallback;
+      // If translation returns the key itself (translation not found), use fallback
+      return translation && translation !== key ? translation : fallback;
     } catch {
       return fallback;
     }
@@ -258,13 +262,13 @@ export const BackgroundDark = (props: SignupBannerProps) => {
             <div className="flex-1">
               <Input
                 type="email"
-                placeholder={getTranslation(DICTIONARY_KEYS.SIGNUPBANNER_InputPlaceholder, 'Enter your email')}
+                placeholder={getTranslation(DICTIONARY_KEYS.SIGNUPBANNER_InputPlaceholder, 'Name')}
                 className="px-4 text-sm text-gray-900 bg-muted placeholder-muted-foreground transition-all duration-200 rounded-full focus:outline-none focus:ring-0 focus:border-transparent border-0 outline-none focus:shadow-none shadow-none focus-visible:ring-0 focus-visible:outline-none"
               />
             </div>
 
             <Button className="btn btn-outline">
-              {getTranslation(DICTIONARY_KEYS.SIGNUPBANNER_ButtonLabel, 'Submit')}
+              {getTranslation(DICTIONARY_KEYS.SIGNUPBANNER_ButtonLabel, 'Sign Up')}
             </Button>
           </div>
         </div>
