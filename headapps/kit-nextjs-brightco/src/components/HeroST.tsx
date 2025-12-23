@@ -59,14 +59,14 @@ export const Default = (props: PageHeaderSTProps) => {
                 <ContentSdkLink
                   field={props?.fields?.Link1}
                   prefetch={false}
-                  className="btn btn-primary mr-4"
+                  className="btn btn-secondary mr-4"
                 />
               )}
               {props?.fields?.Link2 && (
                 <ContentSdkLink
                   field={props?.fields?.Link2}
                   prefetch={false}
-                  className="btn btn-secondary"
+                  className="btn btn-primary"
                 />
               )}
             </div>
@@ -127,14 +127,14 @@ export const Right = (props: PageHeaderSTProps) => {
                 <ContentSdkLink
                   field={props?.fields?.Link1}
                   prefetch={false}
-                  className="btn btn-primary mr-4"
+                  className="btn btn-secondary mr-4"
                 />
               )}
               {props?.fields?.Link2 && (
                 <ContentSdkLink
                   field={props?.fields?.Link2}
                   prefetch={false}
-                  className="btn btn-secondary"
+                  className="btn btn-primary"
                 />
               )}
             </div>
@@ -191,14 +191,14 @@ export const Centered = (props: PageHeaderSTProps) => {
                 <ContentSdkLink
                   field={props?.fields?.Link1}
                   prefetch={false}
-                  className="btn btn-primary mr-4"
+                  className="btn btn-secondary mr-4"
                 />
               )}
               {props?.fields?.Link2 && (
                 <ContentSdkLink
                   field={props?.fields?.Link2}
                   prefetch={false}
-                  className="btn btn-secondary"
+                  className="btn btn-primary"
                 />
               )}
             </div>
