@@ -25,64 +25,57 @@ type PageHeaderSTProps = {
 };
 
 export const Default = (props: PageHeaderSTProps) => {
-  const { containerRef, rightOffset } = useContainerOffsets();
+  const { containerRef } = useContainerOffsets();
 
   return (
     <section
-      className={`relative flex items-center border-8 lg:border-16 border-background ${props?.params?.styles || ''}`}
+      className={`relative flex items-center min-h-[60vh] lg:min-h-[80vh] ${props?.params?.styles || ''}`}
       data-class-change
       suppressHydrationWarning
     >
+      {/* Full background image */}
       <div className="absolute inset-0 z-10">
         <ContentSdkImage
           field={props?.fields?.Image1}
           width={1920}
           height={1080}
+          priority={true}
           className="w-full h-full object-cover"
         />
       </div>
-      <div className="relative lg:container w-full lg:flex mx-auto z-20" ref={containerRef}>
-        <div className="flex flex-col justify-center mt-10 lg:mt-0 lg:w-2/3 lg:min-h-[50rem] px-4 py-8 lg:p-8 backdrop-blur-[20px] bg-[linear-gradient(136deg,_rgba(255,255,255,0.21)_2.61%,_rgba(255,255,255,0.42)_73.95%)]">
-          <div className="lg:max-w-3xl">
-            {props?.fields?.Eyebrow && (
-              <h1 className="text-primary text-xl lg:text-3xl pb-4 uppercase">
-                <ContentSdkText field={props?.fields?.Eyebrow} />
-              </h1>
+      
+      {/* Subtle gradient overlay for text readability */}
+      <div className="absolute inset-0 z-[15] bg-gradient-to-r from-black/20 via-black/10 to-transparent"></div>
+      
+      {/* Content overlay */}
+      <div className="relative container w-full mx-auto z-20" ref={containerRef}>
+        <div className="flex flex-col justify-center min-h-[60vh] lg:min-h-[80vh] px-4 py-12 lg:px-8 lg:py-20 lg:max-w-2xl">
+          {props?.fields?.Eyebrow && (
+            <p className="text-white text-lg lg:text-xl mb-2 lg:mb-3 font-normal">
+              <ContentSdkText field={props?.fields?.Eyebrow} />
+            </p>
+          )}
+          {props?.fields?.Title && (
+            <h1 className="text-white text-5xl lg:text-7xl xl:text-8xl uppercase font-bold leading-[1.1] mb-6 lg:mb-8">
+              <ContentSdkText field={props?.fields?.Title} />
+            </h1>
+          )}
+          <div className="mt-6 lg:mt-8 flex flex-wrap gap-3 lg:gap-4">
+            {props?.fields?.Link1 && (
+              <ContentSdkLink
+                field={props?.fields?.Link1}
+                prefetch={false}
+                className="btn btn-dark"
+              />
             )}
-            {props?.fields?.Title && (
-              <h1 className="text-4xl lg:text-7xl uppercase">
-                <ContentSdkText field={props?.fields?.Title} />
-              </h1>
+            {props?.fields?.Link2 && (
+              <ContentSdkLink
+                field={props?.fields?.Link2}
+                prefetch={false}
+                className="btn btn-primary"
+              />
             )}
-            <div className="mt-8">
-              {props?.fields?.Link1 && (
-                <ContentSdkLink
-                  field={props?.fields?.Link1}
-                  prefetch={false}
-                  className="btn btn-secondary mr-4"
-                />
-              )}
-              {props?.fields?.Link2 && (
-                <ContentSdkLink
-                  field={props?.fields?.Link2}
-                  prefetch={false}
-                  className="btn btn-primary"
-                />
-              )}
-            </div>
           </div>
-        </div>
-        <div
-          className={`lg:absolute top-0 bottom-0 left-2/3`}
-          style={{ right: `-${rightOffset - 16}px` }}
-        >
-          <ContentSdkImage
-            field={props?.fields?.Image1}
-            width={1920}
-            height={1080}
-            priority={true}
-            className="aspect-7/4 lg:aspect-auto w-full h-full object-cover"
-          />
         </div>
       </div>
     </section>

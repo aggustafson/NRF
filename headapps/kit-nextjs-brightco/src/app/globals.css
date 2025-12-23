@@ -98,6 +98,14 @@
       }
     }
 
+    &.btn-dark {
+      @apply py-3 px-5 rounded-full bg-secondary text-secondary-foreground;
+
+      &:hover {
+        @apply bg-secondary-hover;
+      }
+    }
+
     &.btn-ghost {
       @apply py-2;
     }

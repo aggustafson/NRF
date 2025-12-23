@@ -63,13 +63,13 @@ export const Default = (props: MegaMenuItemProps) => {
         {isPageEditing ? (
           <ContentSdkLink
             field={props.fields?.Link}
-            className="inline-block p-4 font-[inherit] whitespace-nowrap cursor-pointer"
+            className="inline-block p-5 lg:p-6 text-base lg:text-lg font-[inherit] whitespace-nowrap cursor-pointer"
           />
         ) : (
           props.fields?.Link?.value?.href && (
             <Link
               href={props.fields.Link.value.href}
-              className="inline-block p-4 font-[inherit] whitespace-nowrap cursor-pointer"
+              className="inline-block p-5 lg:p-6 text-base lg:text-lg font-[inherit] whitespace-nowrap cursor-pointer"
             >
               {props.fields.Link.value.text}
             </Link>

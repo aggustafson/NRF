@@ -32,7 +32,7 @@ export const MegaMenuToggle = ({ className, trigger, children }: MegaMenuToggleP
     <MegaMenuContext.Provider value={{ isVisible, setIsVisible }}>
       <li ref={menuRef} className={className} data-class-change>
         <span
-          className="inline-block p-4 font-[inherit] whitespace-nowrap cursor-pointer"
+          className="inline-block p-5 lg:p-6 text-base lg:text-lg font-[inherit] whitespace-nowrap cursor-pointer"
           onClick={() => setIsVisible(!isVisible)}
         >
           {trigger}

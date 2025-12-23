@@ -32,7 +32,7 @@ export const Default = (props: HeaderSTProps) => {
       <div className="flex justify-between items-start">
         <Link
           href="/"
-          className="relative flex justify-center items-center grow-0 shrink-0 w-24 lg:w-32 h-24 lg:h-32 p-4 lg:p-6 bg-primary z-100"
+          className="relative flex justify-center items-center grow-0 shrink-0 w-16 lg:w-20 h-16 lg:h-20 p-3 lg:p-4 bg-primary z-100"
           prefetch={false}
         >
           <ContentSdkImage field={props.fields?.Logo} className="w-full h-full object-contain" />
@@ -42,7 +42,7 @@ export const Default = (props: HeaderSTProps) => {
           className="relative flex [.partial-editing-mode_&]:flex-col-reverse justify-between items-start gap-10 grow max-w-7xl lg:px-4 bg-background"
           role="navigation"
         >
-          <ul className="hidden lg:flex flex-row lg:[.partial-editing-mode_&]:!flex-col text-left bg-background">
+          <ul className="hidden lg:flex flex-row lg:[.partial-editing-mode_&]:!flex-col justify-center items-center bg-background">
             <AppPlaceholder
               name={`header-navigation-${props.params?.DynamicPlaceholderId}`}
               rendering={props.rendering}
