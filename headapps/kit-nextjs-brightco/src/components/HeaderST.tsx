@@ -51,12 +51,12 @@ export const Default = (props: HeaderSTProps) => {
             />
           </ul>
           <div className="basis-full lg:basis-auto lg:ml-auto">
-            <ul className="flex">
+            <ul className="flex items-center">
               <li className="hidden lg:block">
                 <ContentSdkLink
                   field={props.fields?.SupportLink}
                   prefetch={false}
-                  className="block p-4 font-(family-name:--font-accent) font-medium"
+                  className="inline-block p-5 lg:p-6 text-base lg:text-lg font-(family-name:--font-accent) font-medium whitespace-nowrap"
                 />
               </li>
               <li className="mr-auto lg:mr-0">
@@ -66,7 +66,7 @@ export const Default = (props: HeaderSTProps) => {
                   <ContentSdkLink
                     field={props.fields?.SearchLink}
                     prefetch={false}
-                    className="block p-4 font-(family-name:--font-accent) font-medium"
+                    className="inline-block p-5 lg:p-6 text-base lg:text-lg font-(family-name:--font-accent) font-medium whitespace-nowrap"
                   />
                 )}
               </li>
@@ -103,7 +103,7 @@ export const Default = (props: HeaderSTProps) => {
                   <ContentSdkLink
                     field={props.fields?.CartLink}
                     prefetch={false}
-                    className="block p-4"
+                    className="block p-5 lg:p-6"
                   >
                     <FontAwesomeIcon icon={faShoppingCart} width={24} height={24} />
                   </ContentSdkLink>
